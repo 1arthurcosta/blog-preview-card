@@ -44,7 +44,9 @@ section {
   background-color: var(--white);
   border-radius: 20px;
   padding: 24px;
+  margin: 0 20px;
   width: 327px;
+  max-width: 100%;
   border: 1px solid var(--gray-950);
   box-shadow: 8px 8px var(--gray-950);
 }
@@ -70,6 +72,7 @@ section {
   border-radius: 4px;
   margin-bottom: 12px;
   display: inline-block;
+  font-size: 12px;
 }
 
 .date {
@@ -85,6 +88,13 @@ section {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 12px;
+}
+
+.text h2:hover,
+.text h2:active,
+.text h2:focus {
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 .text p {
@@ -107,4 +117,33 @@ section {
   font-size: 14px;
   font-weight: 800;
   margin-left: 12px;
+}
+
+.avatar figcaption:hover,
+.avatar figcaption:active,
+.avatar figcaption:focus {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 376px) {
+  section {
+    width: 384px;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
 }
